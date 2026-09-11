@@ -63,7 +63,7 @@ def main():
     output = ROOT / "output"
     output.mkdir(exist_ok=True)
     with (output / "contrasts.csv").open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=estimates[0])
+        writer = csv.DictWriter(handle, fieldnames=estimates[0], lineterminator="\n")
         writer.writeheader()
         writer.writerows(estimates)
 

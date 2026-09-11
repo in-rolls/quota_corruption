@@ -13,13 +13,13 @@
       "printed_page": 25,
       "pdf_page": 26,
       "verified": "text extraction and rendered PDF",
-      "sha256": "e894767ff31647a81bdb9a9328e71f952d1712ff9d14654d0fa8e1956c9430e9"
+      "sha256": "519f776c408f45f5ea2403ebee8c83c832a971f4cc193496fb3d2bd495d0359a"
     },
     "data/table_a25.csv": {
       "printed_page": 72,
       "pdf_page": 73,
       "verified": "text extraction and rendered PDF; adoption dates copied, not validated",
-      "sha256": "c1f2fa7b6b3a88149979fd64c34c8a1b342b2299e98a4a03c7afeeba7775a107"
+      "sha256": "87462ff9793bc1c38a7aa69448dc03a8f5800df48aa11496ffe8058a796c48e7"
     }
   },
   "access_checks": [
