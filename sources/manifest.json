@@ -1,0 +1,55 @@
+{
+  "retrieved": "2026-09-10",
+  "paper": {
+    "doi": "10.1016/j.ejpoleco.2025.102764",
+    "version": "Author manuscript dated September 9, 2025; publisher version not inspected in full",
+    "url": "https://www.dropbox.com/scl/fi/w8cf9d5wws4yhcn7maum3/women_politicians_and_corruption_paper_ejpe_9_sep_2025.pdf?rlkey=u8ivgxir96p0of8mjs7o84d95&dl=1",
+    "linked_from": "https://www.shivhastawala.com/",
+    "sha256": "41194c8871243055327dabd9effec6276f3cca2555ac31ca2ac2e7c6d5c1434a",
+    "pdf_pages": 75
+  },
+  "transcriptions": {
+    "data/table5.csv": {
+      "printed_page": 25,
+      "pdf_page": 26,
+      "verified": "text extraction and rendered PDF",
+      "sha256": "e894767ff31647a81bdb9a9328e71f952d1712ff9d14654d0fa8e1956c9430e9"
+    },
+    "data/table_a25.csv": {
+      "printed_page": 72,
+      "pdf_page": 73,
+      "verified": "text extraction and rendered PDF; adoption dates copied, not validated",
+      "sha256": "c1f2fa7b6b3a88149979fd64c34c8a1b342b2299e98a4a03c7afeeba7775a107"
+    }
+  },
+  "access_checks": [
+    {
+      "url": "https://adfdell.pstc.brown.edu/arisreds_data/readme.txt",
+      "result": "Web tool retrieved: REDS 2006 secure access requires approved IRB; no public microdata in public06 listing."
+    },
+    {
+      "url": "https://adfdell.pstc.brown.edu/arisreds_data/public06/",
+      "result": "Public questionnaires and variable lists only; shell HTTP406, web directory readable."
+    },
+    {
+      "url": "https://scholarworks.utrgv.edu/ef_fac/265/",
+      "result": "Publication record found; PDF download HTTP403."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0176268025001247",
+      "result": "Indexed abstract/intro accessible; full page HTTP403."
+    },
+    {
+      "url": "https://www.elisataveras.com/research",
+      "result": "Paper and author commentary links; no replication link located."
+    },
+    {
+      "query": "Exact title, DOI, and authors with replication/data/GitHub/Mendeley/Dataverse/Zenodo",
+      "result": "No public replication deposit located; absence not established."
+    },
+    {
+      "path": "../reds/data",
+      "result": "SEPRI 2014 present; no hdeck/vdeck REDS2006 files located in scoped sibling-data search; user confirms no 2006 access."
+    }
+  ]
+}

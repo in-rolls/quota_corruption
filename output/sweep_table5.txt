@@ -1,0 +1,46 @@
+audit_data.py  data/table5.csv
+
+========================================================================
+1. SHAPE AND KEYS
+========================================================================
+rows 8   columns 10
+key ['panel', 'outcome']: 8 distinct, 0 duplicate rows
+
+========================================================================
+2. MISSINGNESS (level, and -- what matters -- differential)
+========================================================================
+no missing values anywhere
+
+differential missingness by 'panel' (max-min fill rate > 2pp):
+  none
+
+========================================================================
+3. ZEROS VS MISSING
+========================================================================
+no zeros and no missing in numeric columns
+
+========================================================================
+4. DTYPE TRAPS
+========================================================================
+none found
+
+========================================================================
+5. VALUES OUTSIDE THEIR LOGICAL RANGE
+========================================================================
+none found
+
+========================================================================
+6. DISTRIBUTIONS, SKEW AND TAILS
+========================================================================
+nothing with enough variation to summarise
+
+========================================================================
+7. RATE COLUMNS AND THEIR RECONSTRUCTED DENOMINATORS
+========================================================================
+no columns whose name suggests a rate; skipping
+
+========================================================================
+SUMMARY
+========================================================================
+no hard failures. The soft findings above still need judgement --
+this script narrows where to look, it does not decide.

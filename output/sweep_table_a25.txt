@@ -1,0 +1,62 @@
+audit_data.py  data/table_a25.csv
+
+========================================================================
+1. SHAPE AND KEYS
+========================================================================
+rows 16   columns 6
+key ['state']: 16 distinct, 0 duplicate rows
+
+========================================================================
+2. MISSINGNESS (level, and -- what matters -- differential)
+========================================================================
+no missing values anywhere
+
+no --group given. Overall missingness is nearly useless on its own:
+the question is always whether the RATE DIFFERS across groups or waves.
+Re-run with --group <arm|wave|period> before concluding anything.
+
+========================================================================
+3. ZEROS VS MISSING
+========================================================================
+column                                           zeros       %   missing       %
+previous_only                                        3   18.8%         0    0.0%
+previous                                             2   12.5%         0    0.0%
+
+For every column with BOTH: is the zero 'measured, none found' or
+'not measured'? If the data cannot tell them apart, neither can the model.
+
+========================================================================
+4. DTYPE TRAPS
+========================================================================
+none found
+
+========================================================================
+5. VALUES OUTSIDE THEIR LOGICAL RANGE
+========================================================================
+none found
+
+========================================================================
+6. DISTRIBUTIONS, SKEW AND TAILS
+========================================================================
+                     column    median  max  max/med  skew  n_top  top_n_mass
+               current_only     3.000   11    3.667 1.699      1       0.193
+                    current     4.000   13    3.250 1.475      1       0.183
+first_quota_year_as_printed 1,994.500 2006    1.006 1.207      1       0.063
+                   previous     3.500   11    3.143 1.148      1       0.180
+              previous_only     3.000    8    2.667 0.504      1       0.170
+
+'top_n_mass' is the share of the total held by the n_top largest values
+(n_top = max(1, n/100), so it is a single value below n = 200). Both it
+and max/med are blank for columns with negative values, where neither is
+interpretable.
+
+========================================================================
+7. RATE COLUMNS AND THEIR RECONSTRUCTED DENOMINATORS
+========================================================================
+no columns whose name suggests a rate; skipping
+
+========================================================================
+SUMMARY
+========================================================================
+no hard failures. The soft findings above still need judgement --
+this script narrows where to look, it does not decide.

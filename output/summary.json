@@ -1,0 +1,28 @@
+{
+  "method": "Arithmetic from rounded author-manuscript tables; no regression run",
+  "repeated_villages": 14,
+  "states_with_repeated_villages": 6,
+  "early_adopter_repeated_villages": 9,
+  "current_reserved_villages": 71,
+  "repeated_by_state": {
+    "Karnataka": 5,
+    "Kerala": 0,
+    "Maharashtra": 1,
+    "Orissa": 0,
+    "West Bengal": 0,
+    "Madhya Pradesh": 1,
+    "Punjab": 0,
+    "Chhattisgarh": 2,
+    "Gujarat": 0,
+    "Rajasthan": 0,
+    "Haryana": 0,
+    "Himachal Pradesh": 0,
+    "Andhra Pradesh": 0,
+    "Tamil Nadu": 3,
+    "Bihar": 0,
+    "Uttar Pradesh": 2
+  },
+  "expm1_minus_1_1_percent": -66.71289163019205,
+  "log_conversion_scope": "Multiplicative transformed-outcome interaction only; not a correction to mean bribe expenditure. Zero coding is unknown.",
+  "covariance_status": "Unavailable; no uncertainty computed for sums"
+}
