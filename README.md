@@ -1,4 +1,4 @@
-# Female politicians and corruption in rural India
+# Quotas and corruption in rural India
 
 **Replication pending; manuscript audit started.** The author manuscript's interaction coefficient does not equal a direct comparison of two reserved terms with one. Its printed coefficients still imply lower reported bribery for twice-reserved villages. Uncertainty for those direct differences remains unestimated: REDS 2006 microdata and the authors' code are not available locally.
 
