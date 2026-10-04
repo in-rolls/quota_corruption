@@ -1,6 +1,6 @@
 # Female politicians and corruption in rural India
 
-**Replication pending; manuscript audit started.** The author manuscript's interaction coefficient does not equal a direct comparison of two reserved terms with one. Its printed coefficients still imply lower reported bribery for twice-reserved villages. Whether those differences survive appropriate inference remains untested: REDS 2006 microdata and the authors' code are not available locally.
+**Replication pending; manuscript audit started.** The author manuscript's interaction coefficient does not equal a direct comparison of two reserved terms with one. Its printed coefficients still imply lower reported bribery for twice-reserved villages. Uncertainty for those direct differences remains unestimated: REDS 2006 microdata and the authors' code are not available locally.
 
 Paper: Somdeep Chatterjee, Shiv Hastawala and Elisa Taveras, *Female politicians and corruption in rural India*, European Journal of Political Economy 90, 102764 (2025), [DOI](https://doi.org/10.1016/j.ejpoleco.2025.102764). This audit covers the complete 75-page [author manuscript dated September 9, 2025](https://www.dropbox.com/scl/fi/w8cf9d5wws4yhcn7maum3/women_politicians_and_corruption_paper_ejpe_9_sep_2025.pdf?rlkey=u8ivgxir96p0of8mjs7o84d95&dl=1), including its appendix, linked from [Hastawala's website](https://www.shivhastawala.com/). The publisher version was not inspected in full. Findings below concern this manuscript unless stated otherwise. Page references are printed page numbers.
 
@@ -25,11 +25,11 @@ Table A25 implies **14 twice-reserved villages in 6 states**, including 9 in its
 
 These are reconstructions from rounded coefficients, not new regressions. The reported interaction SE is 2.79 percentage points, with 8,116 households. SEs for the direct comparisons require covariances that the tables do not report. Table A25 totals 71 currently reserved villages, while Table 1's Census-linked sample has 67. Village counts therefore need confirmation in each outcome's estimation sample; adoption dates are transcribed, not independently validated.
 
-## Findings and unresolved checks
+## Measurement and estimation
 
-| Finding | Evidence | Consequence and decisive check |
+| Finding | Evidence | Interpretation and further data needed |
 |:--|:--|:--|
-| The main coefficient answers a different comparison from the headline. | Equation 2, Table 5, p. 25; footnote 21, p. 20; Appendix A, pp. 45–46. | Report the interaction and direct contrasts separately, with their full covariance matrix. The negative direct point estimates survive the arithmetic correction. |
+| The main coefficient answers a different comparison from the headline. | Equation 2, Table 5, p. 25; footnote 21, p. 20; Appendix A, pp. 45–46. | Report the interaction and direct contrasts separately, with their full covariance matrix. The reconstructed direct point estimates are negative. |
 | A bribe reduction exceeding 100% is impossible for nonnegative payments. | Results, p. 20, describe amounts as “smaller by a whopping 105%.” Table 5 reports −1.032 and −1.100 log units. | `100 * (exp(-1.100) - 1)` is −66.7%, but describes a multiplicative transformed-outcome interaction under suitable coding, not automatically mean expenditure. Recover zero handling and the outcome definition before reporting a corrected spending effect. |
 | The repeated-reservation cell is small. | Table A25, p. 72: subtract current-only from current counts, and independently previous-only from previous counts. Both give the same state totals. | Table notes say robust SEs; no GP clustering specification was located. This is an unresolved inference concern, not evidence that clustered results are null. Obtain code, count analysis GPs, and run GP-clustered and small-sample sensitivity analyses. |
 | Official-specific bribe denominators appear conditional on contact. | Table 2, p. 17, has 6,449 GP-president bribery responses versus 8,273 for any official approached; counts vary by official. | Compare all-household incidence, contact rates and incidence among contacts. Establish skip rules before treating unasked responses as zero. |
@@ -53,9 +53,9 @@ All main regressions concern household reports for the current council term in t
 
 ## Existing evidence in the sibling projects
 
-The [Rajasthan MGNREGA social-audit analysis](../quota/scripts/17a_raj_social_audit.R) measures works/household verification, job-card possession, staffing and meeting procedures. Its four reservation-cycle coefficients are separate marginal terms, not a repeated-versus-single contrast. The [reported audit table](../quota/tabs/mnrega_raj_05_20_audit.tex) therefore tests different outcomes and histories from REDS bribery.
+The [Rajasthan MGNREGA social-audit analysis](https://github.com/in-rolls/quota_spending/blob/main/scripts/17a_raj_social_audit.R) measures works/household verification, job-card possession, staffing and meeting procedures. Its four reservation-cycle coefficients are separate marginal terms, not a repeated-versus-single contrast. The [reported audit table](https://github.com/in-rolls/quota_spending/blob/main/tabs/mnrega_raj_05_20_audit.tex) therefore tests different outcomes and histories from REDS bribery.
 
-The [UP](../quota_unquote/tabs/up_pai_effects.csv) and [Rajasthan](../quota_unquote/tabs/raj_pai_effects.csv) PAI 2.0 estimates are near zero: 0.067 points (HC2 95% CI −0.223 to 0.358) and −0.050 (−0.588 to 0.487). These were checked against the saved output, not rerun here. Their [design](../quota_unquote/docs/design.md) treats them as conditional associations. [PAI](../pai/README.md) measures governance procedures; these findings cannot establish a zero effect on household bribes. They motivate testing whether any REDS result extends to independently measured governance.
+The [UP](https://github.com/in-rolls/quota_governance/blob/main/tabs/up_pai_effects.csv) and [Rajasthan](https://github.com/in-rolls/quota_governance/blob/main/tabs/raj_pai_effects.csv) PAI 2.0 estimates are near zero: 0.067 points (HC2 95% CI −0.223 to 0.358) and −0.050 (−0.588 to 0.487). These were checked against the saved output, not rerun here. Their [design](https://github.com/in-rolls/quota_governance/blob/main/docs/design.md) treats them as conditional associations. [PAI](https://github.com/in-rolls/pai/blob/main/README.md) measures governance procedures; these findings cannot establish a zero effect on household bribes. They motivate testing whether any REDS result extends to independently measured governance.
 
 ## Data access and resumption
 
@@ -63,24 +63,9 @@ Brown's [REDS documentation](https://adfdell.pstc.brown.edu/arisreds_data/readme
 
 The public [household variable list](https://adfdell.pstc.brown.edu/arisreds_data/public06/hh_variable_list.pdf#page=76) identifies `hdeck81.dta`, schedule p. 129: `p129q2` contact, `p129q5` bribery and `p129q6` amount for the current term; corresponding prior-term fields are also available. Household demographics require additional modules. The GP reservation fields, merge keys, filters and missing-value codes must be matched to the authors' actual inputs before estimation.
 
-To resume: obtain approved 2006 household/village files and the authors' construction and estimation code, including their SHRUG linkage. Reproduce every main coefficient, SE and N first. Then test contact denominators, zeros, joint assignment support, GP-level inference, leave-one-GP/state-out influence and the direct contrasts above. Report GP-weighted estimates separately because they answer a different population question. A stable negative direct contrast with credible assignment and appropriate uncertainty would support the paper; altered coding or inference could weaken it. No result is presumed.
+To resume: obtain approved 2006 household/village files and the authors' construction and estimation code, including their SHRUG linkage. Reproduce every main coefficient, SE and N first. Then test contact denominators, zeros, joint assignment support, GP-level inference, leave-one-GP/state-out influence and the direct contrasts above. Report GP-weighted estimates separately because they answer a different population question. These analyses would estimate the direct reservation-history contrasts and their uncertainty under documented assignment and reporting processes.
 
-## Audit coverage
-
-| Check | Status |
-|:--|:--|
-| Tier 1: denominators; missing versus zero; row loss | Table counts checked; raw-data reconciliation untestable. |
-| Tier 1: provenance; internal consistency | Version, table transcription and contrast arithmetic checked; author build unavailable. |
-| Tier 2: EDA; joins; construction | Mechanical sweep run on the two table transcriptions only. Household EDA, joins and construction untestable. |
-| Tier 2: estimand; inference; skew | Contrasts reconstructed; covariance, clustering and bribe tails untestable. |
-| Tier 3: measurement, assignment, attrition, subgroups | Claims reviewed; no raw implementation or gender-difference test available. No registration located; absence not established. |
-| Tier 4: randomized/observational assignment, selection, functional form | Joint assignment unresolved; raw sample selection and transformed outcomes untestable. IV, RD and longitudinal outcome DiD are not the manuscript's estimator. |
-| Paper moves 1–3: components, bounds, dose | Official components and log bound checked; history contrasts reconstructed; observed cell means unavailable. |
-| Paper moves 4–6: mechanism, implementation, ITT/TOT | Mechanism unverified; observed compliance unavailable, so no TOT constructed. |
-| Paper moves 7–9: benchmarks, fragility, statements versus behavior | Local estimands distinguished; treated-cell counts checked; inference untestable; self-report scope recorded. |
-| Paper moves 10–12: companion work, emphasis, generalizability | Same-survey and local evidence reviewed; appendix caveats retained; national scope qualified by sample and treatment support. |
-
-Rejected criticisms: the interaction does not by itself imply impossible negative bribery probabilities; fixing its interpretation does not reverse the negative direct estimates; the authors do acknowledge interaction arithmetic and possible leader turnover; local PAI/social-audit nulls do not refute this different estimand. Table A2 also contains unusual main-effect entries compared with A3, but these cannot be silently corrected without source code.
+The interaction alone does not imply negative bribery probabilities, and the reconstructed direct estimates are negative. The manuscript discusses interaction arithmetic and possible leader turnover. Local PAI and social-audit results concern different outcomes and do not establish the REDS bribery effect. Table A2 also contains unusual main-effect entries compared with A3, but these cannot be silently corrected without source code.
 
 ## Reproduce the completed checks
 
