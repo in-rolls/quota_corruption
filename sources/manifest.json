@@ -49,7 +49,7 @@
     },
     {
       "path": "../reds/data",
-      "result": "SEPRI 2014 present; no hdeck/vdeck REDS2006 files located in scoped sibling-data search; user confirms no 2006 access."
+      "result": "Inspection on 2026-10-04 found SEPRI household and village modules, including job-card bribe-demand categories, unofficial land-record payments and reservation histories. No hdeck/vdeck REDS 2006 files were found in this directory. The separate SEPRI extension is documented in sources/sepri_inputs.json and docs/sepri.md."
     }
   ]
 }

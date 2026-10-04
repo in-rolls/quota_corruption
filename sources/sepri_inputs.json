@@ -1,0 +1,20 @@
+{
+  "dataset": "SEPRI later-wave extension; not REDS 2006 household microdata",
+  "sha256": {
+    "Sepri1/Village/VILLAGE_DETAIL.dta": "6f47f63f719a3bedf71ac1b276470eb5c1cc1c37d28079fb16e26c06c1a1c776",
+    "Sepri1/Village/SECTION_11_D.dta": "02c2e77f417eac9aa444bf4aefa25400e773a19df88b30ca22f6f72e3f7e103f",
+    "Sepri1/Village/SECTION_05.dta": "230c25e5e9e7e89964c40e9fb57338c175fa5047cb19aee0c0cd97f7f5bb30d9",
+    "Sepri1/HH/SECTION09.dta": "1da229204c494cad09247df28bd6793d72785577ff01b18d4eb5bdf3ecec65fa",
+    "Sepri2/Village/VILLAGE_DETAIL.dta": "0d5316cd998b148c2a8bf4dd731496d0eb8b5a37c57a6c733b2f1b14fe35952e",
+    "Sepri2/Village/SECTION_11_D.dta": "6a097cf18c14579b9ff8e4c91e86355b9a6c39a45b532e3e18f0978578207bd9",
+    "Sepri2/Village/SECTION_05.dta": "935a53aa29f34fd22ec4dc3d19027613f4c97177b37309cb0d7836f67b2454ea",
+    "Sepri2/HH/SECTION09.dta": "4f6e7df60304f898e2d5812ad0c1bebe99bce9f7613a13ad5ca64082ac19b04c",
+    "SEPRI-1_Household_Listing_26.05.2014.pdf": "def71ddc31e5aabe54ec6dfe58db5e8ef6e0507748b4aa2df7f360b272bb13f1",
+    "SEPRI-1_Village_Schedule_07.05.2014.pdf": "1b7e80f4927f1ebfa14b3353b1b5184522ed3dafda53a453df3118d80a709069"
+  },
+  "questionnaire_pages": {
+    "household_printed_page_15": "q9_9: 1 incomplete application, 2 bribe demanded, 3 unknown; Stata labels instead 1 unknown, 2 incomplete application, 3 bribe demanded",
+    "village_printed_page_23": "Section 05 row 7: unofficial payment for certified RoR copy, current and 2006",
+    "village_printed_page_35": "Section 11(D1): row 1 current, row 2 previous, q07 women reservation (1 yes, 2 no)"
+  }
+}

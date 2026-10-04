@@ -1,0 +1,29 @@
+{
+  "sources": {
+    "Sepri1/Village/VILLAGE_DETAIL.dta": "6f47f63f719a3bedf71ac1b276470eb5c1cc1c37d28079fb16e26c06c1a1c776",
+    "Sepri1/Village/SECTION_11_D.dta": "02c2e77f417eac9aa444bf4aefa25400e773a19df88b30ca22f6f72e3f7e103f",
+    "Sepri1/Village/SECTION_05.dta": "230c25e5e9e7e89964c40e9fb57338c175fa5047cb19aee0c0cd97f7f5bb30d9",
+    "Sepri1/HH/SECTION09.dta": "1da229204c494cad09247df28bd6793d72785577ff01b18d4eb5bdf3ecec65fa",
+    "Sepri2/Village/VILLAGE_DETAIL.dta": "0d5316cd998b148c2a8bf4dd731496d0eb8b5a37c57a6c733b2f1b14fe35952e",
+    "Sepri2/Village/SECTION_11_D.dta": "6a097cf18c14579b9ff8e4c91e86355b9a6c39a45b532e3e18f0978578207bd9",
+    "Sepri2/Village/SECTION_05.dta": "935a53aa29f34fd22ec4dc3d19027613f4c97177b37309cb0d7836f67b2454ea",
+    "Sepri2/HH/SECTION09.dta": "4f6e7df60304f898e2d5812ad0c1bebe99bce9f7613a13ad5ca64082ac19b04c"
+  },
+  "packages": {
+    "haven": "2.5.5",
+    "dplyr": "1.2.1",
+    "clubSandwich": "0.7.0",
+    "fwildclusterboot": "0.14.3",
+    "dqrng": "0.4.1"
+  },
+  "r_version": "4.6.0",
+  "draws": 9999,
+  "seed": 20261004,
+  "design": "Exploratory conditional associations, state fixed effects; no assignment rule established",
+  "intervals": "CR2 with Satterthwaite degrees of freedom; not bootstrap intervals",
+  "bootstrap": "Null-imposed WCR11, GP clusters, Rademacher and Webb weights, two-sided",
+  "multiplicity": "Holm adjustment across all reported outcome/contrast combinations",
+  "jobcard": "Applicants without a card, definitive reasons under each coding; unresolved codebook conflict",
+  "land": "Village-reported current unofficial RoR payment: section 05 row 7, Now (Value) column",
+  "linkage": "Exact normalized district/village labels, unique in both directions, compatible state; no fuzzy matches"
+}
