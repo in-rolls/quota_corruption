@@ -146,4 +146,14 @@ The pipeline verifies source hashes, writes aggregate results under `output/sepr
 
 <!-- adjacent:start -->
 
+## 🔗 Adjacent Repositories
+
+- [in-rolls/quota_governance](https://github.com/in-rolls/quota_governance) — Women's political reservations and local governance in India
+- [in-rolls/quota_pds](https://github.com/in-rolls/quota_pds) — Do women pradhans reduce corruption in the PDS? Forensics on 16M Rajasthan ration cards x GP reservation lottery: precise nulls, clean placebos.
+- [in-rolls/local_elections_reform](https://github.com/in-rolls/local_elections_reform) — Replication materials and analyses of electoral reform, presidential participation, and elite representation in rural India
+- [in-rolls/quota_elite_quality](https://github.com/in-rolls/quota_elite_quality) — Effect of Gender Quotas on Some Qualities of Elites
+- [in-rolls/quota_sanitation](https://github.com/in-rolls/quota_sanitation) — Replication and analysis of gender quotas, sanitation preferences and toilet provision in India
+
+_Powered by [Adjacent](https://github.com/gojiplus/adjacent)_
+
 <!-- adjacent:end -->
