@@ -143,3 +143,7 @@ make lint-r
 ```
 
 The pipeline verifies source hashes, writes aggregate results under `output/sepri/`, and updates the SEPRI table above. No household or village identifiers are exported. Package versions, seeds and bootstrap settings are recorded in [provenance.json](output/sepri/provenance.json). The default is 9,999 draws per test; `BOOTSTRAP_DRAWS` can override it for development runs.
+
+<!-- adjacent:start -->
+
+<!-- adjacent:end -->
